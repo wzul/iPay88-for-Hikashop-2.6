@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.1" method="upgrade" group="hikashoppayment">
+	<name>iPay88 Payment Plugin for Hikashop</name>
+	<creationDate>01/18/2017</creationDate>
+	<version>1.0.0</version>
+	<author>Wan Zulkarnain</author>
+	<authorEmail>wan@wanzul-hosting.com</authorEmail>
+	<authorUrl>http://www.wanzul-hosting.com</authorUrl>
+	<copyright>(C) 2017 Wanzul Hosting Enterprise. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>This plugin enables you to setup your iPay88 payment system</description>
+	<files>
+		<filename plugin="ipay88">ipay88.php</filename>
+		<filename>ipay88_end.php</filename>
+		<filename>ipay88api.php</filename>
+		<filename>logo-ipay88.png</filename>
+	</files>
+	<params addpath="/components/com_hikashop/params">
+		<param name="pluginoptions" type="pluginoptions" default="plugin" label="hikashop" description="HikaShop options" />
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_hikashop/fields">
+			<fieldset name="basic">
+				<field id="pluginoptions" name="pluginoptions" type="pluginoptions" label="hikashop" description="HikaShop options" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
